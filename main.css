@@ -33,7 +33,6 @@ h1 {
 }
 
 .photo  {
-    width: 27%; 
     border: 1px solid transparent;
 }
 
@@ -45,11 +44,12 @@ h1 {
     margin-top: 50px;
 }
 
-.footer p,
-h6 {
-    width: 60%;
+.footer p, h6 {
     border: 1px solid transparent;
     font-family: 'Roboto Slab';
+}
+.footer .sectionbar{
+    width: 161px;
 }
 
 .footer h6 {
@@ -60,12 +60,6 @@ h6 {
 .footer p {
     font-size: 18px;
     margin: 0;
-}
-
-.sectionbar {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 @media screen  and (max-width: 1400px) {
@@ -118,9 +112,19 @@ h6 {
     }
     .footer .sectionbar:nth-child(4) {
         margin-top: 25px;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: left;
     }
+
+}
+@media screen and (max-width:398px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    .footer .sectionbar:nth-child(3) {
+        margin-top: 25px;
+    }
+    
 }
 
